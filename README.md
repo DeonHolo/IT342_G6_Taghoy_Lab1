@@ -79,7 +79,7 @@ Web app runs at: `http://localhost:5173`
 
 ## 👤 Author
 
-**IT342 - G5**
+Ron Luigi F. Taghoy
 
 ## 📄 License
 
