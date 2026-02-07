@@ -44,7 +44,7 @@
 | Initial backend setup | `7b5f490c8796d3a0d87c5d20b5a0b6e2856859ce` |
 | Auth endpoints | `7b5f490c8796d3a0d87c5d20b5a0b6e2856859ce` |
 | User profile endpoint | `7b5f490c8796d3a0d87c5d20b5a0b6e2856859ce` |
-| React web app | `pending` |
-| Beta Key feature | `pending` |
-| Documentation | `pending` |
+| React web app | `245779723656b7dc684eec7bbc3abf0dc723928b` |
+| Beta Key feature | `245779723656b7dc684eec7bbc3abf0dc723928b` |
+| Documentation | `245779723656b7dc684eec7bbc3abf0dc723928b` |
 
