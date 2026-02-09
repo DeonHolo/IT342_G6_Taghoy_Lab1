@@ -356,45 +356,6 @@ body {
   color: var(--accent-red);
 }
 
-/* Beta Key Display - Large and Prominent */
-.beta-key-section {
-  text-align: center;
-  padding: 2rem;
-  margin-bottom: 1.5rem;
-  background: rgba(255, 70, 85, 0.05);
-  border: 1px solid rgba(255, 70, 85, 0.3);
-  position: relative;
-}
-
-.beta-key-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60%;
-  height: 2px;
-  background: var(--accent-red);
-  box-shadow: 0 0 15px var(--accent-red-glow);
-}
-
-.beta-key-section .info-label {
-  display: block;
-  margin-bottom: 1rem;
-}
-
-.beta-key-display {
-  font-size: 1.8rem;
-  font-weight: 700;
-  font-family: 'Courier New', monospace;
-  letter-spacing: 3px;
-  color: var(--accent-red);
-  text-shadow: 0 0 20px var(--accent-red-glow);
-  padding: 0.5rem;
-  user-select: all;
-  white-space: nowrap;
-}
-
 /* Loading Animation */
 .loading {
   display: flex;

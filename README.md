@@ -1,4 +1,4 @@
-# BetaKey - User Registration & Authentication System
+# User Registration & Authentication System
 
 A full-stack user authentication system built for IT342 Laboratory.
 
@@ -51,16 +51,15 @@ Web app runs at: `http://localhost:5173`
 |--------|----------|-------------|
 | POST | `/api/auth/register` | Register new user |
 | POST | `/api/auth/login` | User login |
-| GET | `/api/user/me` | Get current user profile |
+| GET | `/api/user/me` | Get current user profile (protected) |
 
 ## 📝 Features
 
 - ✅ User Registration with email validation
 - ✅ Secure Login with BCrypt password hashing
-- ✅ Auto-generated Steam-style Beta Key (XXXXX-XXXXX-XXXXX)
 - ✅ Protected Dashboard/Profile page
-- ✅ Logout confirmation modal
-- ✅ Valorant-inspired UI design
+- ✅ Logout functionality with confirmation
+- ✅ Responsive design
 
 ## 👤 Author
 

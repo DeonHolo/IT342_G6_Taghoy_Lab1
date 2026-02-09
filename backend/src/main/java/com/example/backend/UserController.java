@@ -30,14 +30,12 @@ public class UserController {
         private String email;
         private String username;
         private String role;
-        private String betaKey;
 
         public UserResponse(User user) {
             this.id = user.getId();
             this.email = user.getEmail();
             this.username = user.getUsername();
             this.role = user.getRole();
-            this.betaKey = user.getBetaKey();
         }
 
         // Getters
@@ -55,10 +53,6 @@ public class UserController {
 
         public String getRole() {
             return role;
-        }
-
-        public String getBetaKey() {
-            return betaKey;
         }
     }
 }

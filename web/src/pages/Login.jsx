@@ -50,7 +50,7 @@ function Login() {
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ delay: 0.2, duration: 0.5 }}
                     >
-                        BetaKey
+                        User Auth
                     </motion.h1>
                     <motion.p
                         className="subtitle"
@@ -58,7 +58,7 @@ function Login() {
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.4, duration: 0.5 }}
                     >
-                        Closed Beta Access Portal
+                        Login to your account
                     </motion.p>
                 </div>
 
@@ -115,7 +115,7 @@ function Login() {
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
                     >
-                        {loading ? 'Authenticating...' : 'Access Portal'}
+                        {loading ? 'Logging in...' : 'Login'}
                     </motion.button>
                 </form>
 
@@ -125,7 +125,7 @@ function Login() {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.6, duration: 0.4 }}
                 >
-                    Don't have access? <Link to="/register">Request Beta Key</Link>
+                    Don't have an account? <Link to="/register">Register</Link>
                 </motion.div>
             </motion.div>
         </div>

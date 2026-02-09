@@ -50,7 +50,7 @@ function Register() {
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ delay: 0.2, duration: 0.5 }}
                     >
-                        BetaKey
+                        User Auth
                     </motion.h1>
                     <motion.p
                         className="subtitle"
@@ -58,7 +58,7 @@ function Register() {
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.4, duration: 0.5 }}
                     >
-                        Request Beta Access
+                        Create your account
                     </motion.p>
                 </div>
 
@@ -82,7 +82,7 @@ function Register() {
                         <label>Username</label>
                         <input
                             type="text"
-                            placeholder="Choose your callsign"
+                            placeholder="Choose a username"
                             value={formData.username}
                             onChange={(e) => setFormData({ ...formData, username: e.target.value })}
                             required
@@ -131,7 +131,7 @@ function Register() {
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
                     >
-                        {loading ? 'Requesting Access...' : 'Join The Beta'}
+                        {loading ? 'Creating account...' : 'Register'}
                     </motion.button>
                 </form>
 
@@ -141,7 +141,7 @@ function Register() {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.65, duration: 0.4 }}
                 >
-                    Already have access? <Link to="/login">Access Portal</Link>
+                    Already have an account? <Link to="/login">Login</Link>
                 </motion.div>
             </motion.div>
         </div>

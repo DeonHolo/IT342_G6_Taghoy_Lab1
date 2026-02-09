@@ -75,7 +75,7 @@ function Dashboard() {
                     transition={{ duration: 0.5 }}
                 >
                     <h1>
-                        <span>Beta</span>Key Portal
+                        <span>User</span> Dashboard
                     </h1>
                     <motion.button
                         className="btn-logout"
@@ -99,28 +99,15 @@ function Dashboard() {
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ delay: 0.4, duration: 0.4 }}
                     >
-                        Beta Access Granted
+                        Welcome
                     </motion.div>
 
                     <div className="profile-info">
-                        {/* Beta Key - Large and Prominent */}
-                        <motion.div
-                            className="beta-key-section"
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ delay: 0.5, duration: 0.5 }}
-                        >
-                            <span className="info-label">Your Beta Key</span>
-                            <div className="beta-key-display">
-                                {user?.betaKey || 'XXXXX-XXXXX-XXXXX'}
-                            </div>
-                        </motion.div>
-
                         <motion.div
                             className="info-row"
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
-                            transition={{ delay: 0.6, duration: 0.4 }}
+                            transition={{ delay: 0.5, duration: 0.4 }}
                         >
                             <span className="info-label">Username</span>
                             <span className="info-value">{user?.username || 'N/A'}</span>
@@ -130,7 +117,7 @@ function Dashboard() {
                             className="info-row"
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
-                            transition={{ delay: 0.7, duration: 0.4 }}
+                            transition={{ delay: 0.6, duration: 0.4 }}
                         >
                             <span className="info-label">Email</span>
                             <span className="info-value">{user?.email || 'N/A'}</span>
@@ -140,10 +127,10 @@ function Dashboard() {
                             className="info-row"
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
-                            transition={{ delay: 0.8, duration: 0.4 }}
+                            transition={{ delay: 0.7, duration: 0.4 }}
                         >
-                            <span className="info-label">Access Level</span>
-                            <span className="role-badge">{user?.role || 'TESTER'}</span>
+                            <span className="info-label">Role</span>
+                            <span className="role-badge">{user?.role || 'USER'}</span>
                         </motion.div>
                     </div>
                 </motion.div>
@@ -168,7 +155,7 @@ function Dashboard() {
                             onClick={(e) => e.stopPropagation()}
                         >
                             <h2>Confirm Logout</h2>
-                            <p>Are you sure you want to leave the portal?</p>
+                            <p>Are you sure you want to logout?</p>
                             <div className="modal-buttons">
                                 <motion.button
                                     className="btn-cancel"
