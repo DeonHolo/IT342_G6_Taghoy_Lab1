@@ -8,8 +8,8 @@ A full-stack user authentication system built for IT342 Laboratory.
 IT342_G6_Taghoy_Lab1/
 ├── /backend        # Spring Boot REST API
 ├── /web            # React + Vite Web Application
-├── /mobile         # Mobile Application (coming soon)
-├── /docs           # Documentation (FRS, ERD, UML)
+├── /mobile         # Android Kotlin Mobile App
+├── /docs           # Documentation (FRS, ERD, UML, Context)
 ├── README.md
 └── TASK_CHECKLIST.md
 ```
@@ -18,10 +18,10 @@ IT342_G6_Taghoy_Lab1/
 
 | Layer | Technology |
 |-------|------------|
-| Backend | Spring Boot, Spring Security, JPA |
+| Backend | Spring Boot 2.7.18, Spring Security, JPA, Java 11 |
 | Database | MySQL |
-| Web Frontend | React + Vite |
-| Mobile | (Next Lab Session) |
+| Web Frontend | React 19 + Vite 7 |
+| Mobile | Android Kotlin, Retrofit 2.9, Material 3 |
 
 ## 🔧 How to Run
 
@@ -45,13 +45,21 @@ npm run dev
 ```
 Web app runs at: `http://localhost:5173`
 
+### 4. Run Mobile App
+1. Open the `mobile/` folder in **Android Studio**
+2. Wait for Gradle sync to complete
+3. Make sure the Spring Boot backend is running on your machine
+4. Run on an **Android emulator** (the app connects via `10.0.2.2:8080`)
+5. **Note:** For physical device testing, update `BASE_URL` in `RetrofitClient.kt` to your machine's local IP
+
 ## 🌐 API Endpoints
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
 | POST | `/api/auth/register` | Register new user |
 | POST | `/api/auth/login` | User login |
-| GET | `/api/user/me` | Get current user profile (protected) |
+| POST | `/api/auth/logout` | User logout |
+| GET | `/api/user/me` | Get current user profile (requires `X-User-Id` header) |
 
 ## 📝 Features
 
@@ -59,7 +67,10 @@ Web app runs at: `http://localhost:5173`
 - ✅ Secure Login with BCrypt password hashing
 - ✅ Protected Dashboard/Profile page
 - ✅ Logout functionality with confirmation
-- ✅ Responsive design
+- ✅ Responsive web design
+- ✅ Android mobile app with same functionality
+- ✅ Input validation and error handling
+- ✅ Consistent JSON API responses
 
 ## 👤 Author
 

@@ -1,6 +1,6 @@
 package com.example.backend;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @Entity
